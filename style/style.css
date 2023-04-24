@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{ /*criação de variaveis*/
+    --cor-preta: black;
+    --cor-branca: white;
+    --padding: 20px;
+    --cor-cabecalho: #222b3a;
+}
+
+*{ /*afeta a página inteira*/
+    margin: 0px;
+    padding: 0px;
+    transition: all 0.5s;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#cabecalho{
+    background-color: var(--cor-cabecalho);
+    display: flex; /*alinha em linha*/
+    justify-content: space-between; /*espaço entre conteudo igualmente*/
+    align-items: center;
+    padding: 10px;
+}
+
+#cabecalho nav{
+    margin-right: 30px;
+}
+
+#cabecalho nav a{
+    text-decoration: none; /*tira a decoração do texto*/
+    color: var(--cor-branca ); /*var é pra usar a variavel*/
+}
+
+#cabecalho nav a:hover{ /*hover faz executar quando o mouse passar em cima*/
+    background-color: rgb(45, 161, 255);
+    color: var(--cor-branca);
+    border-radius: 25px;
+}
+
+#cabecalho h1{
+    font-size: 25pt;
+    color: var(--cor-branca);
+    margin-left: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#cabecalho .espac{
+    padding: 15px;
+}
+
+#corpo #banner{
+    background-color: red;
+    height: calc(100vh - 93px); /*usar pra deixar 100% sem estourar tudo*/
+    display: flex;
+    flex-direction: column; /*mudar a direção do flex para sem em coluna*/
+    align-items: center; /*coloca o conteudo no centro*/
+    justify-content: center; /*coloca o conteudo no centro tambem*/
+    background-image: url(/img/duvidas-nuvem.webp);
+    background-repeat: no-repeat; /*imagem não repete*/
+    background-size: cover; /*fundo preenche toda a área*/
+    background-position: center center;
+}
+
+.margin-cima-baixo{
+    margin-top: 40px;
+    margin-bottom: 90px;
+    color: var(--cor-preta);
+}
+
+#corpo #banner h1{
+    color: var(--cor-preta);
+    font-size: 40pt;
+    text-align: center;
+}
+
+#corpo #banner p{
+    text-align: center;
+    font-size: 15pt;
+}
+
+#inf{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 35px;
+    text-align: center;
+    font-size: 14pt;
+}
+
+#inf img{
+    width: 300px;
+}
+
+#inf .espacsobre{
+    padding: 35px;
+}
+
+#inf .sobre h1{
+    font-size: 25pt;
+}
+
+#inf .nosso{
+    margin-bottom: 4px;
+}
+
+#precos{
+    color: var(--cor-branca);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 35px;
+    text-align: center;
+    align-items: center;
+    font-size: 15pt;
+    background-color: rgb(20, 48, 81);
+}
+
+#precos h1{
+    margin-bottom: 45px;
+}
+
+#precos p{
+    margin: 25px;
+    margin-top: 17px;
+}
+
+#inf2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 35px;
+    text-align: center;
+    font-size: 14pt;
+}
+
+#inf2 .espacsobre{
+    padding: 35px;
+}
+
+#inf2 .sobre h1{
+    font-size: 25pt;
+}
+
+#inf2 .nosso{
+    margin-bottom: 4px;
+}
+
+#inf2 .imagem2 img{
+    width: 500px;
+}
+
+#form #form-info{
+    text-align: center;
+    padding: 20px;
+}
+
+#form{
+    background-color: var(--cor-cabecalho);
+    color: var(--cor-branca)
+}
+
+#form #form-formulario form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#form #form-formulario form input{
+    display: block; /*alinha como bloco, coloca o texto encima da caixa*/
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    border-bottom: 2px solid var(--cor-preta);
+    width: 300px;
+    outline: none;
+}
+
+#form #form-formulario form button{
+    width: 230px;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #1151bf;
+    color: var(--cor-branca);
+    border-radius: 25px;
+    border: none;
+    font-size: 17px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+#form #form-formulario form div{
+    margin: 5px 0px;
+}
+
+#form #form-formulario form label{
+    margin: 10px;
+}
+
+#form #form-info p{
+    font-size: 15pt;
+}
+
+#rodape{
+    padding: 15px;
+    text-align: center;
+    color: var(--cor-branca);
+    background-color: var(--cor-preta);
+}
+
+#espaca{
+    padding: 10px;
+}
